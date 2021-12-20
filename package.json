@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "graphql": "^16.0.1",
+    "graphqurl": "^1.0.1"
+  }
+}

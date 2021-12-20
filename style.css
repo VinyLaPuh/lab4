@@ -1,0 +1,112 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+    /* добавим плавность переходов для всех элементов страницы*/
+ }
+ img {
+    display: block;
+    width: 100%;
+ }
+ h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    letter-spacing: 1px;
+ }
+ body {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: #373737;
+    background: #5986c5;
+ }
+
+ .notes{
+    display: flex;
+    width: 350px;
+    height: 350px;
+    background-color: darkviolet;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.62);
+    box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.62);
+}
+.delete_notes{
+   display: flex;
+   position: relative;
+   right: 10px;
+   width: 40px;
+   height: 40px;
+   margin: 10px;
+   
+}
+.delete_notes:hover{
+    background: indigo;
+}
+
+
+@media (max-width: 380px) {
+   .notes{
+        display: flex;
+        width: 350px;
+        height: 350px;
+        background-color: darkviolet;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        -webkit-box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.62);
+        -moz-box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.62);
+        box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.62);
+
+        opacity: 1;
+        transition: opacity 350ms ease, height 350ms ease 400ms;
+   }
+   .delete_notes{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: absolute;
+       right: 10px;
+       width: 40px;
+       height: 40px;
+       margin: 10px;  
+   }
+   .delete_notes:hover{
+        background: indigo;
+   }
+   .add_notes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 350px;
+        background-color: darkviolet;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        -webkit-box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.62);
+        -moz-box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.62);
+        box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.62);
+
+        opacity: 1;
+        transition: opacity 350ms ease, height 350ms ease 400ms;
+       
+   }
+   .add_button{
+       width: 80%;
+       height: 80%;
+       background-color: wheat;
+   }
+   .animate {
+    opacity: 0;
+    height: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
